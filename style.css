@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #ffe6ee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Main question area */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 650px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+/* Yes and No buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#yesButton {
+    background-color: #ff4d88;
+    color: white;
+}
+
+#noButton {
+    background-color: #555;
+    color: white;
+}
+
+/* Cute messages when No runs away */
+#message {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+
+/* Customize button on top right */
+#customizeButton {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+
+    background-color: white;
+    color: #444;
+
+    padding: 10px 16px;
+    font-size: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#customizeButton:hover {
+    background-color: #ffd6e4;
+}
+
+
+/* Dark background behind customize popup */
+#customizeMenu {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Customize popup */
+.customize-box {
+    background-color: white;
+
+    width: 85%;
+    max-width: 450px;
+
+    padding: 30px;
+    border-radius: 18px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.customize-box h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+
+/* X button */
+#closeCustomize {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background: none;
+    color: #555;
+
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+
+/* Girlfriend / Marriage / Custom buttons */
+.preset-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.preset-buttons button {
+    background-color: #ffe6ee;
+    color: #333;
+
+    border: 2px solid #ff4d88;
+}
+
+.preset-buttons button:hover {
+    background-color: #ffd0df;
+}
+
+
+/* Custom question fields */
+#customOptions {
+    display: none;
+
+    text-align: left;
+
+    margin-top: 20px;
+}
+
+#customOptions label {
+    display: block;
+
+    margin-top: 12px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+#customOptions input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+/* Apply custom question button */
+#applyCustom {
+    display: block;
+
+    margin: 20px auto 0 auto;
+
+    background-color: #ff4d88;
+    color: white;
+}
+
+
+/* Phone layout */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    #customizeButton {
+        top: 10px;
+        right: 10px;
+
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    .customize-box {
+        width: 80%;
+        padding: 25px;
+    }
+}
