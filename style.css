@@ -154,6 +154,13 @@ button {
 .preset-buttons button:hover {
     background-color: #ffd0df;
 }
+.dedication {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+    text-align: center;
+}
 
 
 /* Custom question fields */
@@ -228,4 +235,5 @@ button {
         width: 80%;
         padding: 25px;
     }
+
 }
