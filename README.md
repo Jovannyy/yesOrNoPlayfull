@@ -14,6 +14,7 @@ Forget carving your name on a tree. At least the Internet is forever proof of my
 ## What It Does
 
 - Asks a sweet girlfriend or marriage question.
+- Lets you add someone's name to the question with a URL, such as `index.html?name=Ariana`.
 - Lets you create your own custom question and button labels.
 - Makes the **No** button dodge your cursor or touchscreen.
 - Shows random playful messages when someone tries to say no.
@@ -24,6 +25,8 @@ It is not meant to be serious. It is just a cute, silly way to ask an important 
 ## Run It
 
 No installation or build step is required. Open `index.html` in a web browser.
+
+To personalize the default question with a name, add `?name=Someone` to the URL, for example `index.html?name=Ariana`.
 
 The app is built with plain HTML, CSS, and JavaScript, so it works locally without any dependencies.
 

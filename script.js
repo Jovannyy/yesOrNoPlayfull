@@ -17,6 +17,14 @@ const yesButton = document.getElementById("yesButton");
 const noButton = document.getElementById("noButton");
 const message = document.getElementById("message");
 
+const urlParams = new URLSearchParams(window.location.search);
+const customName = urlParams.get("name");
+
+if (customName) {
+    question.textContent =
+        customName + ", will you be my girlfriend? ❤️";
+}
+
 let selectedOption = "girlfriend";
 
 
